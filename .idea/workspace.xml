@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f636c44-f74b-4d8f-8fcc-bcb1e2a954f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/FirstCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="21" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1597090067894" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597092304224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597092304224" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597086316556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

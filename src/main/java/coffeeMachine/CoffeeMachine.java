@@ -4,7 +4,7 @@ package coffeeMachine;
 public class CoffeeMachine {
 
 //    private CoffeeType coffeeType;
-    private MachineState machineState;
+//    private MachineState machineState;
     private int water;
     private int milk;
     private int beans;
@@ -19,7 +19,7 @@ public class CoffeeMachine {
         this.beans = beans;
         this.cups = cups;
         this.money =  money;
-        this.machineState = MachineState.RUN;
+//        this.machineState = MachineState.RUN;
     }
 
     private String getInput() {

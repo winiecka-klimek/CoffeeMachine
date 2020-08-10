@@ -29,23 +29,48 @@ public enum MachineState {
 
     INPUT {
         @Override
-        public void State machineState (CoffeeMachine coffeeMachine) {
-            machineState  = State.INPUT;
+        public void MachineState machineState (CoffeeMachine coffeeMachine) {
+//            machineState  = State.INPUT;
             System.out.println(machineState.stateMessage);
          }
     },
 
     BUY{
         @Override
-        public static void State machineState (CoffeeMachine coffeeMachine) {
-            cofeeMachine.buy();
-            machineState = State.INPUT;
+        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
+            coffeeMachine.buy();
+            machineState = MachineState.INPUT;
+        }
+    },
+
+
+    TAKE_MONEY {
+        @Override
+        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
+            coffeeMachine.takeMoney();
+            machineState = MachineState.INPUT;
+        }
+    },
+
+    REMAINING_RESOURCES {
+        @Override
+        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
+            coffeeMachine.remaining();
+            machineState = MachineState.INPUT;
+        }
+    },
+
+    EXIT {
+        @Override
+        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
+            coffeeMachine.exit();
         }
     },
 
     RUN {
         @Override
-                public static MachineState machineState (CoffeeMachine coffeeMachine) {
+                public static void MachineState machineState (CoffeeMachine coffeeMachine) {
+            machineState = MachineState.INPUT;
 
             String action = scanner.nextLine();
             switch (action) {
@@ -61,11 +86,13 @@ public enum MachineState {
                     return EXIT;
                 default:
                     return INPUT;
+
             };
         }
     }
 
     public abstract MachineState machineState (CoffeeMachine coffeeMachine);
+
 }
 
 
