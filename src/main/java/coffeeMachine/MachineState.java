@@ -1,78 +1,12 @@
 package coffeeMachine;
 
 public enum MachineState {
-    INPUT ("Write action (buy, fill, take, remaining, exit): "),
-    RUN,
-    BUY,
-    FILL_RESOURCES,
-    TAKE_MONEY,
-    REMAINING_RESOURCES,
-    EXIT;
-
-    private String stateMessage;
-
-    MachineState machineState;
-    CoffeeMachine coffeeMachine;
-
-    MachineState() {
-
-    }
-
-    MachineState(String stateMessage) {
-        this.stateMessage = stateMessage;
-    }
-
-    public String getStateMessage() {
-        return stateMessage;
-    }
-
 
     INPUT {
         @Override
-        public void MachineState machineState (CoffeeMachine coffeeMachine) {
-//            machineState  = State.INPUT;
-            System.out.println(machineState.stateMessage);
-         }
-    },
-
-    BUY{
-        @Override
-        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
-            coffeeMachine.buy();
-            machineState = MachineState.INPUT;
-        }
-    },
-
-
-    TAKE_MONEY {
-        @Override
-        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
-            coffeeMachine.takeMoney();
-            machineState = MachineState.INPUT;
-        }
-    },
-
-    REMAINING_RESOURCES {
-        @Override
-        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
-            coffeeMachine.remaining();
-            machineState = MachineState.INPUT;
-        }
-    },
-
-    EXIT {
-        @Override
-        public static void MachineState machineState (CoffeeMachine coffeeMachine) {
-            coffeeMachine.exit();
-        }
-    },
-
-    RUN {
-        @Override
-                public static void MachineState machineState (CoffeeMachine coffeeMachine) {
-            machineState = MachineState.INPUT;
-
-            String action = scanner.nextLine();
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+//            System.out.println("Write action (buy, fill, take, remaining, exit): ");
+            String action = coffeeMachine.getInput();
             switch (action) {
                 case "buy":
                     return BUY;
@@ -86,13 +20,51 @@ public enum MachineState {
                     return EXIT;
                 default:
                     return INPUT;
-
-            };
+            }
         }
-    }
+    },
 
-    public abstract MachineState machineState (CoffeeMachine coffeeMachine);
+    BUY {
+        @Override
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+            coffeeMachine.buy();
+            return MachineState.INPUT;
+        }
+    },
 
+    TAKE_MONEY {
+        @Override
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+            coffeeMachine.takeMoney();
+           return MachineState.INPUT;
+        }
+    },
+
+    REMAINING_RESOURCES {
+        @Override
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+            coffeeMachine.remaining();
+            return MachineState.INPUT;
+        }
+    },
+
+    FILL_RESOURCES {
+        @Override
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+            coffeeMachine.fill();
+            return MachineState.INPUT;
+        }
+    },
+
+    EXIT {
+        @Override
+        public MachineState machineState(CoffeeMachine coffeeMachine) {
+            coffeeMachine.exit();
+            return null;
+        }
+    };
+
+    public abstract MachineState machineState(CoffeeMachine coffeeMachine);
 }
 
 
