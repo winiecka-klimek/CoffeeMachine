@@ -18,11 +18,48 @@ public class CoffeeMachine {
         this.beans = beans;
         this.cups = cups;
         this.money =  money;
-//        this.machineState = MachineState.RUN;
+
+        setMainState();
     }
 
-    public void run() {
-        machineState = MachineState.INPUT;
+    public void setMainState() {
+        machineState = MachineState.MAIN;
+        System.out.println("Write action (buy, fill, take, remaining, exit): ");
+        chooseAction();
+    }
+
+    public void chooseAction() {
+
+        String action = getInput();
+        switch (action) {
+            case "buy":
+                buy();
+                machineState = MachineState.BUY;
+                setMainState();
+                break;
+            case "fill":
+                fill();
+                machineState = MachineState.FILL_RESOURCES;
+                setMainState();
+                break;
+            case "take":
+                takeMoney();
+                machineState = MachineState.TAKE_MONEY;
+                setMainState();
+                break;
+            case "remaining":
+                remaining();
+                machineState = MachineState.REMAINING_RESOURCES;
+                setMainState();
+                break;
+            case "exit":
+                machineState = MachineState.EXIT;
+                exit();
+                break;
+            default:
+                System.out.println("Unrecognized action");
+                setMainState();
+        }
     }
 
     public boolean isEnoughWater() {
@@ -62,21 +99,15 @@ public class CoffeeMachine {
     }
 
     public boolean isEnoughResources() {
-        if(isEnoughWater() && isEnoughMilk() && isEnoughCoffeeBeans() && isEnoughCups()) {
-            System.out.println("I have enough resources, making you a coffee!");
-            return true;
-        } else {
-            return isEnoughWater() && isEnoughMilk() && isEnoughCoffeeBeans() && isEnoughCups();
-        }
+        return isEnoughWater() && isEnoughMilk() && isEnoughCoffeeBeans() && isEnoughCups();
     }
 
     public void buy() {
+        chooseCoffee();
         if(isEnoughResources()) {
-            chooseCoffee();
             makeCoffee();
             charge();
-        } else {
-            isEnoughResources();
+            System.out.println("I have enough resources, making you a coffee!");
         }
     }
 
@@ -99,7 +130,9 @@ public class CoffeeMachine {
             case "3":
                 coffeeType = CoffeeType.CAPPUCCINO;
                 break;
-            case "break":
+            case "back":
+                setMainState();
+                chooseAction();
                 break;
         }
     }
@@ -109,12 +142,10 @@ public class CoffeeMachine {
         milk -= coffeeType.getMilk();
         beans -= coffeeType.getCoffeeBeans();
         cups --;
-        money += coffeeType.getCost();
-
     }
 
     public void charge() {
-    money -= coffeeType.getCost();
+    money += coffeeType.getCost();
     }
 
     public void takeMoney() {
@@ -155,7 +186,7 @@ public class CoffeeMachine {
         System.out.println(milk + " of milk");
         System.out.println(beans + " of coffee beans");
         System.out.println(cups + " of disposable cups");
-        System.out.println(money + " of money");
+        System.out.println(money + "$ of money");
     }
 
     public boolean on() {

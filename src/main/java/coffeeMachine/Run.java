@@ -10,7 +10,7 @@ public class Run {
         CoffeeMachine coffeeMachine = new CoffeeMachine(400, 540, 120, 9, 550);
 
         do {
-            coffeeMachine.run();
+            coffeeMachine.chooseAction();
         } while (coffeeMachine.on());
     }
 }

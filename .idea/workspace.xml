@@ -4,8 +4,18 @@
     <list default="true" id="8f636c44-f74b-4d8f-8fcc-bcb1e2a954f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/FirstCode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/Run.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,22 +97,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1596486026650" />
-    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1597267308519">
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1597868304555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597267308519" />
-    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1597267308519">
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597868304555" />
+    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1597868304554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597267308519" />
-    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1597267308518">
+    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597868304554" />
+    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1597868304554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597267308518" />
-    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1597267308519">
+    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597868304554" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1597868304555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597267308519" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597868304555" />
     <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1597090067894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -111,9 +121,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597092304224" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597260864119">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597864022453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597260864119" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597864022453" />
   </component>
 </project>
