@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f636c44-f74b-4d8f-8fcc-bcb1e2a954f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/CoffeeMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/FirstCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/MachineState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coffeeMachine/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/CoffeeType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/MachineState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/coffeeMachine/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/coffeeMachine/Run.class" afterDir="false" />
     </list>
@@ -22,11 +17,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -41,9 +40,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="coffeeMachine" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CoffeeMachineTest.shouldFillWater">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coffeeMachine.Run" />
       <module name="coffeeMachine" />
@@ -57,8 +74,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoffeeMachineTest.shouldFillWater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoffeeMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coffeeMachine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="coffeeMachine" />
+      <option name="MAIN_CLASS_NAME" value="coffeeMachine.CoffeeMachineTest" />
+      <option name="METHOD_NAME" value="shouldFillWater" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoffeeMachineTest.shouldFillWater" />
         <item itemvalue="Application.Run" />
       </list>
     </recent_temporary>
@@ -89,41 +123,53 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1597088593947">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1603923107740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597088593947" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603923107740" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596486026650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1596486026650" />
-    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1597868304555">
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1603924687841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597868304555" />
-    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1597868304554">
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603924687841" />
+    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1603924687841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597868304554" />
-    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1597868304554">
+    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603924687841" />
+    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1603924687841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597868304554" />
-    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1597868304555">
+    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603924687841" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1603924687841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597868304555" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603924687841" />
     <state x="213" y="21" key="Maven.ArtifactSearchDialog" timestamp="1597090067894">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="21" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1597090067894" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597092304224">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1603747588167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597092304224" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603747588167" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603924969842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603924969842" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597864022453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597864022453" />
+    <state x="387" y="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603747663936">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="265" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1603747663936" />
+    <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603747644415">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="83" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1603747644415" />
   </component>
 </project>

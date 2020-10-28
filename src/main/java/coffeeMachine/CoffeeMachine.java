@@ -9,6 +9,63 @@ public class CoffeeMachine {
     private int beans;
     private int cups;
     private int money;
+
+    public int getWater() {
+        return water;
+    }
+
+    public void setWater(int water) {
+        this.water = water;
+    }
+
+    public int getMilk() {
+        return milk;
+    }
+
+    public void setMilk(int milk) {
+        this.milk = milk;
+    }
+
+    public int getBeans() {
+        return beans;
+    }
+
+    public void setBeans(int beans) {
+        this.beans = beans;
+    }
+
+    public int getCups() {
+        return cups;
+    }
+
+    public void setCups(int cups) {
+        this.cups = cups;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public CoffeeType getCoffeeType() {
+        return coffeeType;
+    }
+
+    public void setCoffeeType(CoffeeType coffeeType) {
+        this.coffeeType = coffeeType;
+    }
+
+    public MachineState getMachineState() {
+        return machineState;
+    }
+
+    public void setMachineState(MachineState machineState) {
+        this.machineState = machineState;
+    }
+
     CoffeeType coffeeType;
     MachineState machineState;
 
